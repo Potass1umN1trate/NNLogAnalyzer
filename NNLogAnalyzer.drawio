@@ -1,9 +1,52 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0" version="26.1.2">
   <diagram name="Page-1" id="rw_Vq9YV-QV0Jrcbo052">
-    <mxGraphModel>
+    <mxGraphModel dx="1728" dy="945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-1" value="Neural Network" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.virtual_server;" vertex="1" parent="1">
+          <mxGeometry x="520" y="322.5" width="100" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-2" value="OWASP Juice Shop" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.web_server;" vertex="1" parent="1">
+          <mxGeometry x="980" y="325" width="105" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-14" value="Requests" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fJGOATbbRxuVGbh4QZ63-3" target="fJGOATbbRxuVGbh4QZ63-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-3" value="Reverse Proxy (Nginx)" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.proxy_server;" vertex="1" parent="1">
+          <mxGeometry x="780" y="325" width="105" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="fJGOATbbRxuVGbh4QZ63-4" target="fJGOATbbRxuVGbh4QZ63-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-4" value="&lt;div&gt;Regular User&lt;/div&gt;&lt;div&gt;IP: 2.2.2.2&lt;/div&gt;" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;" vertex="1" parent="1">
+          <mxGeometry x="650" y="120" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-10" value="Requests" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;" edge="1" parent="1" source="fJGOATbbRxuVGbh4QZ63-5" target="fJGOATbbRxuVGbh4QZ63-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="833" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-5" value="Attacker &lt;br&gt;IP: 1.1.1.1" style="fontColor=#3399FF;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.pc;" vertex="1" parent="1">
+          <mxGeometry x="920" y="120" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-15" value="Logs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fJGOATbbRxuVGbh4QZ63-3" target="fJGOATbbRxuVGbh4QZ63-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-16" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="480" y="317.5" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-23" value="Prediction" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="332.5" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-24" value="1.1.1.1 - attacker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fJGOATbbRxuVGbh4QZ63-23">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fJGOATbbRxuVGbh4QZ63-25" value="2.2.2.2 - not attacker " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="fJGOATbbRxuVGbh4QZ63-23">
+          <mxGeometry y="60" width="140" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
